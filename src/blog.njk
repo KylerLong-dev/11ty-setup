@@ -1,0 +1,16 @@
+---
+title: Blog
+layout: base.njk
+---
+
+<div>
+    <h2>Recent articles</h2>
+    <ul> 
+
+        {%- for post in collections.post -%}
+            {% include "article-snippet.njk" %}
+        {%- endfor -%}
+
+    </ul>
+
+</div>
